@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazar</title>
+    <link rel="stylesheet" href="cssHomePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="top-nav">
+        <span class="store-location">
+            <i class="fas fa-map-marker-alt"></i> Store Location: Dhaka
+        </span>
+        <div class="top-links">
+            <span>Eng </span>
+            <span>USD </span>
+            <a href="#" class="sign-in">Sign In / Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="header" role="banner">
+        <div class="logo">
+            <h1><i class="fas fa-leaf"></i> Ecobazar</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search" aria-label="Search for products">
+            <button class="search-button" onclick="searchProduct()">Search</button>
+        </div>
+        <div class="cart-section">
+            <i class="far fa-heart"> |</i>
+            <div class="shopping-cart">
+                <a href="Shopping-Cart.html" aria-label="Go to shopping cart">
+                    <i class="fas fa-shopping-cart"></i><span class="cart-items">0</span>
+                </a>
+                <span class="cart-amount">$0.00</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation Menu -->
+    <nav class="bottom-nav" role="navigation">
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="phone-number">
+            <i class="fas fa-phone-alt"></i> (+880) 1545256733
+        </div>
+    </nav>
+
+    <!-- Floating Shopping Cart Icon -->
+    <div class="floating-cart">
+        <a href="Shopping-Cart.html" aria-label="Go to shopping cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-items">0</span>
+        </a>
+    </div>
+
+    <div class="product-detail-container">
+        <div class="product-gallery">
+            <!-- Thumbnails -->
+            <div class="thumbnails">
+                <img src="Images/c1.jpg" alt="Thumbnail image of Chinese Cabbage" class="thumbnail" onclick="changeMainImage('Images/c1.jpg')">
+                <img src="Images/c2.jpg" alt="Thumbnail image of Chinese Cabbage" class="thumbnail" onclick="changeMainImage('Images/c2.jpg')">
+                <img src="Images/c3.jpg" alt="Thumbnail image of Chinese Cabbage" class="thumbnail" onclick="changeMainImage('Images/c3.jpg')">
+                <img src="Images/c4.jpg" alt="Thumbnail image of Chinese Cabbage" class="thumbnail" onclick="changeMainImage('Images/c4.jpg')">
+            </div>
+            <!-- Main Image -->
+            <div class="main-image">
+                <img src="Images/chinesecabbage.jpg" alt="Main Product Image of Chinese Cabbage" id="main-image">
+            </div>
+        </div>
+        <div class="product-info">
+            <h1>Chinese Cabbage</h1>
+            <div class="rating">
+                <span>⭐⭐⭐⭐</span>
+                <span>4 Reviews</span>
+            </div>
+            <div class="price">
+                <span class="old-price">$48.00</span>
+                <span class="new-price">$17.28</span>
+                <span class="discount">Save 64%</span>
+            </div>
+            <div class="stock-status">In Stock</div>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+            <!-- Chinese Cabbage (Product Details Page) -->
+            <div class="name-price">
+                <h3>Chinese Cabbage</h3>
+            </div>
+
+            <!-- Quantity Selection -->
+            <div class="quantity">
+                <button class="decrease" onclick="decreaseQuantity()">-</button>
+                <input type="number" id="quantity-input" value="1" min="1" aria-label="Quantity of Chinese Cabbage">
+                <button class="increase" onclick="increaseQuantity()">+</button>
+            </div>
+
+            <!-- Add to Cart Button -->
+            <div class="buttons">
+                <button class="add-to-cart" data-id="6" data-name="Chinese Cabbage" data-price="17.28" onclick="addToCart()">
+                    <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+            </div>
+
+            <!-- Product Tags -->
+            <div class="tags">
+                <strong>Category:</strong> Vegetables<br>
+                <strong>Tags:</strong> Vegetables, Healthy, Chinese, Cabbage, Green Cabbage
+            </div>
+
+            <!-- Social Media Share -->
+            <div class="share">
+                <span>Share:</span>
+                <i class="fab fa-facebook" onclick="share('facebook')" aria-label="Share on Facebook"></i>
+                <i class="fab fa-twitter" onclick="share('twitter')" aria-label="Share on Twitter"></i>
+                <i class="fab fa-pinterest" onclick="share('pinterest')" aria-label="Share on Pinterest"></i>
+                <i class="fab fa-instagram" onclick="share('instagram')" aria-label="Share on Instagram"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-details">
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="active">Description</button>
+        </div>
+
+        <!-- Description Content -->
+        <div class="tab-content">
+            <div class="description">
+                <p>100 g of fresh leaves provides:</p>
+                <ul>
+                    <li>Aliquam ac est at augue volutpat elementum.</li>
+                    <li>Quisque nec enim eget sapien molestie.</li>
+                    <li>Proin convallis odio volutpat finibus posuere.</li>
+                </ul>
+            </div>
+            <!-- Promotion -->
+        <div class="promotion">
+            <video controls>
+                <source src="promo.mp4" type="video/mp4">
+            </video>
+            <div class="badges">
+                <div class="badge">64% Discount</div>
+                <div class="badge">100% Organic</div>
+            </div>
+        </div>
+        </div>
+
+        
+    </div>
+
+    <div id="custom-popup" class="popup">
+        <div class="popup-content">
+            <span id="popup-close" class="popup-close">&times;</span>
+            <p id="popup-message"></p>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.</p>
+        <form action="/subscribe" method="POST">
+            <input type="email" placeholder="Your email address" required aria-label="Your email address">
+            <button type="submit">Subscribe</button>
+        </form>
+        <div class="social-icons">
+            <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Follow us on Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <!-- Ecobazar Info -->
+            <div class="footer-about">
+                <h3><i class="fas fa-leaf"></i> Ecobazar</h3>
+                <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+                <p><strong>(219) 555–0114</strong> or <a href="mailto:Proxy@gmail.com">Proxy@gmail.com</a></p>
+            </div>
+
+            <!-- My Account Links -->
+            <div class="footer-links">
+                <h4>My Account</h4>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+            </div>
+
+            <!-- Help Links -->
+            <div class="footer-links">
+                <h4>Helps</h4>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchange</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

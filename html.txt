@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazar Header</title>
+    <link rel="stylesheet" href="cssHomePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="top-nav">
+        <span class="store-location">
+            <i class="fas fa-map-marker-alt"></i> Store Location: Lincoln - 344, Illinois, Chicago, USA
+        </span>
+        <div class="top-links">
+            <span>Eng </span>
+            <span>USD </span>
+            <a href="#" class="sign-in">Sign In / Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="header">
+        <div class="logo">
+            <h1><i class="fas fa-leaf"></i> Ecobazar</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button class="search-button">Search</button>
+        </div>
+        <div class="cart-section">
+            <a href="#" class="favorites-icon"><i class="far fa-heart"> |</i></a>
+            <div class="shopping-cart">
+                <i class="fas fa-shopping-cart"></i><span class="cart-items">2</span>
+                <span class="cart-amount">$57.00</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation Menu -->
+    <nav class="bottom-nav">
+        <ul>
+            <!-- Dropdown for Home -->
+            <li class="dropdown">
+                <a href="#">Home</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Home 1</a></li>
+                    <li><a href="#">Home 2</a></li>
+                    <li><a href="#">Home 3</a></li>
+                </ul>
+            </li>
+            <!-- Dropdown for Shop -->
+            <li class="dropdown">
+                <a href="#">Shop</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Shop 1</a></li>
+                    <li><a href="#">Shop 2</a></li>
+                    <li><a href="#">Shop 3</a></li>
+                </ul>
+            </li>
+            <!-- Dropdown for Pages -->
+            <li class="dropdown">
+                <a href="#">Pages</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </li>
+            <!-- Dropdown for Blog -->
+            <li class="dropdown">
+                <a href="#">Blog</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Blog Post 1</a></li>
+                    <li><a href="#">Blog Post 2</a></li>
+                    <li><a href="#">Blog Post 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="phone-number">
+            <i class="fas fa-phone-alt"></i> (+880) 154525673345
+        </div>
+    </nav>
+
+    <section class="hero-banner">
+        <!-- Main Hero Section -->
+        <div class="hero-left">
+            <div class="hero-content">
+                <h1>Fresh & Healthy Organic Food</h1>
+                <p>Sale up to <span class="highlight">30% OFF</span><br>Free shipping on all your order.</p>
+                <a href="#" class="btn">Shop now <span>→</span></a>
+            </div>
+
+        </div>
+
+        <!-- Right Side Promotions -->
+        <div class="hero-right">
+            <!-- First Promo -->
+            <div class="promo-card">
+                <p class="promo-title">SUMMER SALE</p>
+                <h2>75% OFF</h2>
+                <p class="promo-desc">Only Fruit & Vegetable</p>
+                <a href="#" class="promo-link">Shop Now <span>→</span></a>
+            </div>
+
+            <!-- Second Promo -->
+            <div class="promo-card dark-card">
+                <p class="promo-title">BEST DEAL</p>
+                <h2>Special Products Deal of the Month</h2>
+                <a href="#" class="promo-link">Shop Now <span>→</span></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="feature-section">
+        <!-- Free Shipping -->
+        <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-truck"></i></div>
+            <div class="feature-title">Free Shipping</div>
+            <div class="feature-description">Free shipping on all your order</div>
+        </div>
+
+        <!-- Customer Support -->
+        <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-headphones-alt"></i></div>
+            <div class="feature-title">Customer Support 24/7</div>
+            <div class="feature-description">Instant access to Support</div>
+        </div>
+
+        <!-- Secure Payment -->
+        <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-credit-card"></i></div>
+            <div class="feature-title">100% Secure Payment</div>
+            <div class="feature-description">We ensure your money is safe</div>
+        </div>
+
+        <!-- Money-Back Guarantee -->
+        <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-box"></i></div>
+            <div class="feature-title">Money-Back Guarantee</div>
+            <div class="feature-description">30 Days Money-Back Guarantee</div>
+        </div>
+    </div>
+
+    <section class="popular-categories">
+        <div class="section-header">
+            <h2>Popular Categories</h2>
+            <a href="#" class="view-all">View All →</a>
+        </div>
+        <div class="category-grid">
+            <!-- Category 1 -->
+            <div class="category-item">
+                <img src="Images/fresh-fruit.png" alt="Fresh Fruit">
+                <p>Fresh Fruit</p>
+            </div>
+            <!-- Category 2 -->
+            <div class="category-item">
+                <img src="fresh-vegetables.jpg" alt="Fresh Vegetables">
+                <p>Fresh Vegetables</p>
+            </div>
+            <!-- Category 3 -->
+            <div class="category-item">
+                <img src="meat-fish.jpg" alt="Meat & Fish">
+                <p>Meat & Fish</p>
+            </div>
+            <!-- Category 4 -->
+            <div class="category-item">
+                <img src="snacks.jpg" alt="Snacks">
+                <p>Snacks</p>
+            </div>
+            <!-- Category 5 -->
+            <div class="category-item">
+                <img src="beverages.jpg" alt="Beverages">
+                <p>Beverages</p>
+            </div>
+            <!-- Category 6 -->
+            <div class="category-item">
+                <img src="beauty-health.jpg" alt="Beauty & Health">
+                <p>Beauty & Health</p>
+            </div>
+            <!-- Category 7 -->
+            <div class="category-item">
+                <img src="bread-bakery.jpg" alt="Bread & Bakery">
+                <p>Bread & Bakery</p>
+            </div>
+            <!-- Category 8 -->
+            <div class="category-item">
+                <img src="baking-needs.jpg" alt="Baking Needs">
+                <p>Baking Needs</p>
+            </div>
+            <!-- Category 9 -->
+            <div class="category-item">
+                <img src="cooking.jpg" alt="Cooking">
+                <p>Cooking</p>
+            </div>
+            <!-- Category 10 -->
+            <div class="category-item">
+                <img src="diabetic-food.jpg" alt="Diabetic Food">
+                <p>Diabetic Food</p>
+            </div>
+            <!-- Category 11 -->
+            <div class="category-item">
+                <img src="dish-detergents.jpg" alt="Dish Detergents">
+                <p>Dish Detergents</p>
+            </div>
+            <!-- Category 12 -->
+            <div class="category-item">
+                <img src="oil.jpg" alt="Oil">
+                <p>Oil</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hot-deals">
+        <div class="section-header">
+            <h2>Hot Deals</h2>
+            <a href="#" class="view-all">View All →</a>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+
+            <!-- Featured Product -->
+            <div class="product-card featured">
+                <div class="ribbon">
+                    <span class="sale">Sale 50%</span>
+                    <span class="best">Best Sale</span>
+                </div>
+                <img src="https://via.placeholder.com/300x200" alt="Product Image" class="product-image">
+                <div class="product-info">
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    <h3>Chinese cabbage</h3>
+                    <p class="price">$12.00 <span class="old-price">$24.00</span></p>
+                    <div class="rating">⭐⭐⭐⭐⭐ <span>(524 Feedback)</span></div>
+                    <p class="offer-timer">Hurry up! Offer ends in:</p>
+                    <div class="timer">
+                        <span>01 <small>Days</small></span>
+                        <span>23 <small>Hours</small></span>
+                        <span>34 <small>Mins</small></span>
+                        <span>57 <small>Secs</small></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Products -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150x150" alt="Chinese Cabbage">
+                <h3>Chinese cabbage</h3>
+                <p class="price">$12.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150x150" alt="Green Lettuce">
+                <h3>Green Lettuce</h3>
+                <p class="price">$9.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150x150" alt="Eggplant">
+                <h3>Eggplant</h3>
+                <p class="price">$34.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="product-card sale">
+                <span class="badge">Sale 50%</span>
+                <img src="https://via.placeholder.com/150x150" alt="Green Capsicum">
+                <h3>Green Capsicum</h3>
+                <p class="price">$9.00 <span class="old-price">$20.99</span></p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150x150" alt="Green Chili">
+                <h3>Green Chili</h3>
+                <p class="price">$34.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150x150" alt="Big Potatoes">
+                <h3>Big Potatoes</h3>
+                <p class="price">$12.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150x150" alt="Corn">
+                <h3>Corn</h3>
+                <p class="price">$12.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="product-card">
+                <span class="badge">Sale 50%</span>
+                <img src="https://via.placeholder.com/150x150" alt="Red Tomatos">
+                <h3>Red Tomatos</h3>
+                <p class="price">$9.00 <span class="old-price">$20.99</span></p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150x150" alt="Surjapur Mango">
+                <h3>Surjapur Mango</h3>
+                <p class="price">$34.00</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Popular Products Section -->
+    <section class="popular-products">
+        <div class="header">
+            <h1>Popular Products</h1>
+            <a href="#" class="view-all">View All →</a>
+        </div>
+
+        <div class="product-grid">
+
+            <!-- Product 1: Green Apple -->
+            <div class="product-card">
+                <span class="sale-badge">Sale 50%</span>
+                <img src="https://via.placeholder.com/200x200" alt="Green Apple">
+                <h3>Green Apple</h3>
+                <p class="price">$14.99 <span class="old-price">$20.99</span></p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Product 2: Fresh Indian Malta -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Fresh Indian Malta">
+                <h3>Fresh Indian Malta</h3>
+                <p class="price">$20.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Product 3: Chinese Cabbage -->
+            <div class="product-card featured">
+                <img src="https://via.placeholder.com/200x200" alt="Chinese Cabbage">
+                <h3>Chinese Cabbage</h3>
+                <p class="price">$12.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+
+            <!-- Product 4: Green Lettuce -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Green Lettuce">
+                <h3>Green Lettuce</h3>
+                <p class="price">$9.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Product 5: Eggplant -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Eggplant">
+                <h3>Eggplant</h3>
+                <p class="price">$34.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Product 6: Big Potatoes -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Big Potatoes">
+                <h3>Big Potatoes</h3>
+                <p class="price">$20.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Product 7: Corn -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Corn">
+                <h3>Corn</h3>
+                <p class="price">$20.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Product 8: Fresh Cauliflower -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Fresh Cauliflower">
+                <h3>Fresh Cauliflower</h3>
+                <p class="price">$12.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Product 9: Green Capsicum -->
+            <div class="product-card">
+                <span class="sale-badge">Sale 50%</span>
+                <img src="https://via.placeholder.com/200x200" alt="Green Capsicum">
+                <h3>Green Capsicum</h3>
+                <p class="price">$9.00 <span class="old-price">$20.99</span></p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Product 10: Green Chili -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Green Chili">
+                <h3>Green Chili</h3>
+                <p class="price">$34.00</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Subscribe our Newsletter</h2>
+        <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.</p>
+        <form>
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Ecobazar Info -->
+            <div class="footer-about">
+                <h3><i class="fas fa-leaf"></i> Ecobazar</h3>
+                <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+                <p><strong>(219) 555–0114</strong> or <a href="mailto:Proxy@gmail.com">Proxy@gmail.com</a></p>
+            </div>
+
+            <!-- My Account Links -->
+            <div class="footer-links">
+                <h4>My Account</h4>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Shoping Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+            </div>
+
+            <!-- Help Links -->
+            <div class="footer-links">
+                <h4>Helps</h4>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchange</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

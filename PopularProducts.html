@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazar</title>
+    <link rel="stylesheet" href="cssHomePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="top-nav">
+        <span class="store-location">
+            <i class="fas fa-map-marker-alt"></i> Store Location: Dhaka
+        </span>
+        <div class="top-links">
+            <span>Eng </span>
+            <span>USD </span>
+            <a href="#" class="sign-in">Sign In / Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+<header class="header">
+    <div class="logo">
+        <h1><i class="fas fa-leaf"></i> Ecobazar</h1>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button class="search-button" onclick="searchProduct()">Search</button>
+    </div>
+    <div class="cart-section">
+        <i class="far fa-heart"> |</i>
+        <div class="shopping-cart">
+            <a href="Shopping-Cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-items">0</span></a>
+            <span class="cart-amount">$0.00</span>
+        </div>
+    </div>
+</header>
+
+    <!-- Bottom Navigation Menu -->
+    <nav class="bottom-nav">
+        <ul>
+          
+           <li><a href="HomePage.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="phone-number">
+            <i class="fas fa-phone-alt"></i> (+880) 1545256733
+        </div>
+    </nav>
+
+    <!-- Floating Shopping Cart Icon -->
+<div class="floating-cart">
+  <a href="Shopping-Cart.html">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-items">0</span>
+  </a>
+</div>
+<section class="hot-deals">
+    <div class="section-header">
+      <h2>Popular Products</h2>
+     
+    </div>
+    <div class="deals-grid">
+      <div class="deal-item">
+        <img src="Images/greenapple.jpg" alt="Green Apple">
+        <h3>Green Apple</h3>
+        <p class="price">$20</p>
+        <button class="add-to-cart" data-id="4" data-name="Green Apple" data-price="20">Add to Cart</button>
+      </div>
+      <div class="deal-item">
+        <img src="images/chinesecabbage.jpg" alt="Chinese Cabbage">
+        <h3>Chinese Cabbage</h3>
+        <p class="price">$25</p>
+        <button class="add-to-cart" data-id="5" data-name="Chinese Cabbage" data-price="25">Add to Cart</button>
+      </div>
+      <div class="deal-item">
+        <img src="images/greenletuce.jpg" alt="Green Lettuce">
+        <h3>Green Lettuce</h3>
+        <p class="price">$12</p>
+        <button class="add-to-cart" data-id="6" data-name="Green Lettuce" data-price="12">Add to Cart</button>
+      </div>
+      <div class="deal-item">
+        <img src="images/eggplant.jpg" alt="Eggplant">
+        <h3>Eggplant</h3>
+        <p class="price">$18</p>
+        <button class="add-to-cart" data-id="7" data-name="Eggplant" data-price="18">Add to Cart</button>
+      </div>
+      <div class="deal-item">
+        <img src="images/freshcauli.jpg" alt="Fresh Cauliflower">
+        <h3>Fresh Cauliflower</h3>
+        <p class="price">$22</p>
+        <button class="add-to-cart" data-id="8" data-name="Fresh Cauliflower" data-price="22">Add to Cart</button>
+      </div>
+      <div class="deal-item">
+        <img src="images/greencapcicum.jpg" alt="Green Capsicum">
+        <h3>Green Capsicum</h3>
+        <p class="price">$10</p>
+        <button class="add-to-cart" data-id="9" data-name="Green Capsicum" data-price="10">Add to Cart</button>
+      </div>
+      <div class="deal-item">
+        <img src="images/greenchili.jpg" alt="Green Chilli">
+        <h3>Green Chilli</h3>
+        <p class="price">$8</p>
+        <button class="add-to-cart" data-id="10" data-name="Green Chilli" data-price="8">Add to Cart</button>
+      </div>
+      <div class="deal-item">
+        <img src="images/bigpotato.jpg" alt="Big Potatoes">
+        <h3>Big Potatoes</h3>
+        <p class="price">$12</p>
+        <button class="add-to-cart" data-id="11" data-name="Big Potatoes" data-price="12">Add to Cart</button>
+      </div>
+      <div class="deal-item">
+        <img src="images/corn.jpg" alt="Corn">
+        <h3>Corn</h3>
+        <p class="price">$10</p>
+        <button class="add-to-cart" data-id="12" data-name="Corn" data-price="10">Add to Cart</button>
+      </div>
+      <div class="deal-item">
+        <img src="images/redcapsicum.jpg" alt="Red Chilli">
+        <h3>Red Chilli</h3>
+        <p class="price">$9</p>
+        <button class="add-to-cart" data-id="13" data-name="Red Chilli" data-price="9">Add to Cart</button>
+      </div>
+      <div class="deal-item">
+        <img src="images/redtomatos.jpg" alt="Red Tomatoes">
+        <h3>Red Tomatoes</h3>
+        <p class="price">$14</p>
+        <button class="add-to-cart" data-id="14" data-name="Red Tomatoes" data-price="14">Add to Cart</button>
+      </div>
+      <div class="deal-item">
+        <img src="images/surjapormango.jpg" alt="Surjapur Mango">
+        <h3>Surjapur Mango</h3>
+        <p class="price">$50</p>
+        <button class="add-to-cart" data-id="15" data-name="Surjapur Mango" data-price="50">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Subscribe our Newsletter</h2>
+    <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.</p>
+    <form>
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+    </form>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Ecobazar Info -->
+        <div class="footer-about">
+            <h3><i class="fas fa-leaf"></i> Ecobazar</h3>
+            <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+            <p><strong>(219) 555–0114</strong> or <a href="mailto:Proxy@gmail.com">Proxy@gmail.com</a></p>
+        </div>
+
+        <!-- My Account Links -->
+        <div class="footer-links">
+            <h4>My Account</h4>
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Shoping Cart</a></li>
+                <li><a href="#">Wishlist</a></li>
+            </ul>
+        </div>
+
+        <!-- Help Links -->
+        <div class="footer-links">
+            <h4>Helps</h4>
+            <ul>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Returns & Exchange</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script> 
+
+</body>
+</html>

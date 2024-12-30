@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazar</title>
+    <link rel="stylesheet" href="cssHomePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="top-nav">
+        <span class="store-location">
+            <i class="fas fa-map-marker-alt"></i> Store Location: Dhaka
+        </span>
+        <div class="top-links">
+            <span>Eng </span>
+            <span>USD </span>
+            <a href="#" class="sign-in">Sign In / Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+<header class="header">
+    <div class="logo">
+        <h1><i class="fas fa-leaf"></i> Ecobazar</h1>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button class="search-button" onclick="searchProduct()">Search</button>
+    </div>
+    <div class="cart-section">
+        <i class="far fa-heart"> |</i>
+        <div class="shopping-cart">
+            <a href="Shopping-Cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-items">0</span></a>
+            <span class="cart-amount">$0.00</span>
+        </div>
+    </div>
+</header>
+
+    <!-- Bottom Navigation Menu -->
+    <nav class="bottom-nav">
+        <ul>
+          
+           <li><a href="HomePage.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="phone-number">
+            <i class="fas fa-phone-alt"></i> (+880) 1545256733
+        </div>
+    </nav>
+
+    <!-- Floating Shopping Cart Icon -->
+<div class="floating-cart">
+  <a href="Shopping-Cart.html">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-items">0</span>
+  </a>
+</div>
+<section class="popular-categories">
+    <div class="section-header">
+        <h2>Popular Categories</h2>
+        <a href="Category.html" class="view-all">View All →</a>
+    </div>
+    <div class="category-grid">
+       
+        <div class="category-item">
+            <img src="Images/freshfruit.png" alt="Fresh Fruit">
+            <p>Fresh Fruit</p>
+        </div>
+        
+        <div class="category-item">
+            <img src="Images/freshveg.png" alt="Fresh Vegetables">
+            <p>Fresh Vegetables</p>
+        </div>
+       
+        <div class="category-item">
+            <img src="Images/meat&fish.png" alt="Meat & Fish">
+            <p>Meat & Fish</p>
+        </div>
+       
+        <div class="category-item">
+            <img src="Images/snacks.png" alt="Snacks">
+            <p>Snacks</p>
+        </div>
+       
+        <div class="category-item">
+            <img src="Images/bevegerages.png" alt="Beverages">
+            <p>Beverages</p>
+        </div>
+        
+        <div class="category-item">
+            <img src="Images/beauty&health.png" alt="Beauty & Health">
+            <p>Beauty & Health</p>
+        </div>
+       
+        <div class="category-item">
+            <img src="Images/bread&backery.png" alt="Bread & Bakery">
+            <p>Bread & Bakery</p>
+        </div>
+       
+        <div class="category-item">
+            <img src="Images/bakingneeds.png" alt="Baking Needs">
+            <p>Baking Needs</p>
+        </div>
+      
+        <div class="category-item">
+            <img src="Images/cooking.png" alt="Cooking">
+            <p>Cooking</p>
+        </div>
+        
+        <div class="category-item">
+            <img src="Images/diabeticfood.png" alt="Diabetic Food">
+            <p>Diabetic Food</p>
+        </div>
+       
+        <div class="category-item">
+            <img src="Images/desidetergent.png" alt="Dish Detergents">
+            <p>Dish Detergents</p>
+        </div>
+        
+        <div class="category-item">
+            <img src="Images/oil.png" alt="Oil">
+            <p>Oil</p>
+        </div>
+    </div>
+</section>
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Subscribe our Newsletter</h2>
+    <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.</p>
+    <form>
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+    </form>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Ecobazar Info -->
+        <div class="footer-about">
+            <h3><i class="fas fa-leaf"></i> Ecobazar</h3>
+            <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+            <p><strong>(219) 555–0114</strong> or <a href="mailto:Proxy@gmail.com">Proxy@gmail.com</a></p>
+        </div>
+
+        <!-- My Account Links -->
+        <div class="footer-links">
+            <h4>My Account</h4>
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Shoping Cart</a></li>
+                <li><a href="#">Wishlist</a></li>
+            </ul>
+        </div>
+
+        <!-- Help Links -->
+        <div class="footer-links">
+            <h4>Helps</h4>
+            <ul>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Returns & Exchange</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script> 
+
+</body>
+</html>
